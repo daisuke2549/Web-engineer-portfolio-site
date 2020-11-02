@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>DAISUKE SASAKI</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 
 <body>
@@ -32,8 +33,6 @@
     </ul>
   </nav>
 </div>
-
-
 </header>
 
 <!--タイトル-->
@@ -54,7 +53,7 @@
     <img src="./img/my_picture" alt="myprofile"/>
   </div>
 
-  <div class="sub_title animated fadein">
+  <div class="portfolio_title profile_title animated fadein">
     <span class="glyphicon glyphicon-apple" style="letter-spacing:5px;"></span> <p>Introduction</p>
   </div>
   <div class="introduction_text animated fadein">
@@ -67,7 +66,7 @@
     </p>
   </div>
 
-  <div class="sub_title animated fadein">
+  <div class="portfolio_title profile_title animated fadein">
     <span class="glyphicon glyphicon-education" style="letter-spacing:5px;"></span> <p>Backgrounds</p>
   </div>
 
@@ -81,57 +80,78 @@
     </p>
   </div>
 
-</div>
+
 
   <!-- スキル紹介 -->
 <div class="skill_section">
   <div class="portfolio_title skill_title">
+  <div class="portfolio_title profile_title animated fadein">
     <span class="glyphicon glyphicon-cog" style="letter-spacing:5px;"></span><p>Skills</p>
   </div>
-
+  </div>
 <div class="introduction_text animated fadein">
-  <div class="skill-item">
-    <div class="skill-image-wrapper">
-      <img class="skill-image" src="./img/Ruby.jpg" alt="">
-    </div>
-    <div class="skill-body">
-      <h3 class="skill-title">Ruby</h3>
-      <div class="skill-rating rating">
-        <div class="rate rate4"></div>
+  <div class="my_skills_set">
+  <div class="row row-cols-2 row-cols-md-5">
+    <div class="col mb-10">
+      <div class="skill-card">
+        <img src="./img/HTML.jpg" class="card-img-top" alt="...">
       </div>
     </div>
-  </div>
-  <div class="skill-item">
-    <div class="skill-image-wrapper">
-      <img class="skill-image" src="img/skill/rails.png" alt="">
-    </div>
-    <div class="skill-body">
-      <h3 class="skill-title">Ruby on rails </h3>
-      <div class="skill-rating rating">
-        <div class="rate rate3"></div>
+    <div class="col mb-10">
+      <div class="skill-card">
+        <img src="./img//CSS.jpg" class="card-img-top" alt="...">
       </div>
     </div>
-  </div>
-  <div class="skill-item">
-    <div class="skill-image-wrapper">
-        <img class="skill-image" src="img/skill/github (1).jpg" alt="">
+    <div class="col mb-10">
+      <div class="skill-card">
+        <img src="./img/JavaScript.jpg" class="card-img-top" alt="...">
       </div>
-      <div class="skill-body">
-        <h3 class="skill-title">Github</h3>
-        <div class="skill-rating rating">
-          <div class="rate rate4"></div>
-        </div>
-      </div>
-    </div> 
     </div>
-  </div>    
+    <div class="col mb-10">
+      <div class="skill-card">
+        <img src="./img/JQuery.jpg" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col mb-10">
+      <div class="skill-card">
+        <img src="./img/PHP.jpg" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col mb-10">
+      <div class="skill-card">
+        <img src="./img/laravel.jpg" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col mb-10">
+      <div class="skill-card">
+        <img src="./img/Ruby_logo.png" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col mb-10">
+      <div class="skill-card">
+        <img src="./img/rails.png" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col mb-10">
+      <div class="skill-card">
+        <img src="./img/Wordpress.jpg" class="card-img-top" alt="...">
+      </div>
+    </div>
 
+    <div class="col mb-10">
+      <div class="skill-card">
+        <img src="./img/github (1).jpg" class="card-img-top" alt="...">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
 <!-- サービス紹介 -->
 <div class="service_section">
 <div class="portfolio_title skill_title">
   <span class="glyphicon glyphicon-globe" style="letter-spacing:5px;"></span><p>Service</p>
 </div>
-
+<div class="introduction_text animated fadein">
 <div class="animated fadein">
   <div class="service_item">
     <div class="service_image">
@@ -183,13 +203,13 @@
     </div>
     <p style="font-size:18px;">※正式なお見積もりは、別途ご相談させていただければと思います。</p>
   </div>
-
+</div>
 </div>
 
 <!--Webサイト　ポートフォリオ-->
 <div class="portfolio_section">
   <div class="portfolio_title works_title">
-    <span class="glyphicon glyphicon-list-alt" style="letter-spacing:5px;"></span><p>Works</p>
+    <span class="glyphicon glyphicon-list-alt" style="letter-spacing:5px;"></span><p>My Works</p>
   </div>
 
 <div class="animated fadein">
@@ -242,17 +262,35 @@
 </div>
 
 <footer>
+  <!--コンタクトフォーム-->
   <div class="portfolio_title contact_title">
     <span class="glyphicon glyphicon-envelope" style="letter-spacing:5px;"></span><p>Contact</p>
   </div>
   <div class="contact_text">ご依頼（ご相談）はメールよりお願い致します</div>
+  <div class="email_icon">
+  <a href="mailto:gerund25495641@gmail.com" class="gmail"><img src="./img/email.jpg" alt=""></a>
+  </div>
     <!--SNSアイコン-->
+    <div class="SNS_account">
+    <div class="portfolio_title skill_title">
+      <span class="glyphicon glyphicon-globe" style="letter-spacing:5px;"></span><p>SNS</p>
+    </div>
     <div>
     <ul class="follow-me">
-      <li><a href="mailto:gerund25495641@gmail.com" class="gmail"></a></li>
-      <li><a href="https://twitter.com/daisukesasaki56 class="twitter"></a></li>
-      <li><a href="https://note.com/daisuke25495641" class="note"></a></li>
+      <div class="follow_text"><p>SNSはこちらとなります</p></div>
+      <div class="SNS">
+        <div class="card">
+          <a href="https://twitter.com/daisukesasaki56" class="gmail"><img src="./img/twitter.jpg" class="card-img-top" alt="..."></a>
+        </div>
+        <div class="card">
+          <a href="https://note.com/daisuke25495641" class="gmail"><img src="./img/note.png" class="card-img-top" alt="..."></a>
+        </div>
+        <div class="card">
+          <a href="https://www.facebook.com/profile.php?id=100006468396288" class="gmail"><img src="./img/facebook.png" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
     </ul>
+    </div>
     </div>
     <!--コピーライト-->
     <div id="copyright">
@@ -266,13 +304,13 @@
       <script src="vendor/jquery.waypoints.min.js"></script>
       <script src="vendor/jquery.magnific-popup.min.js"></script>
       <script src="vendor/mobile-detect.min.js"></script>
-      <script src="main.js"></script>
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script src="jquery.waypoints.min.js"></script>
       <link rel="stylesheet" href="animate.css">
       <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="jquery.textillate.js"></script>
       <script src="jquery.lettering.js"></script>
+      <script src="./js/main.js"></script>
 </body>
-
 </html>
