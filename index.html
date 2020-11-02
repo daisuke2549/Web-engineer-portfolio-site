@@ -4,8 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>DAISUKE SASAKI</title>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
@@ -27,9 +25,13 @@
   <nav class="overlay-menu">
     <ul>
       <li><a href="#" class="menu_aboutme">About Me</a></li>
-      <li><a href="#" class="menu_service">Service</a></li>
-      <li><a href="#" class="menu_works">Works</a></li>
+      <li><a href="#" class="menu_introduction">Introduction</a></li>
+      <li><a href="#" class="menu_backgrounds">Backgrounds</a></li>
+      <li><a href="#" class="menu_skills">Skills</a></li>
+      <li><a href="#" class="menu_services">Service</a></li>
+      <li><a href="#" class="menu_my_works">My works</a></li>
       <li><a href="#" class="menu_contact">Contact</a></li>
+      <li><a href="#" class="menu_sns">SNS</a></li>
     </ul>
   </nav>
 </div>
@@ -45,7 +47,7 @@
 <!-- 自己紹介 -->
 <div class="profile_section">
 
-  <div class="portfolio_title profile_title animated fadein">
+  <div class="portfolio_title profile_title animated fadein" >
     <span class="glyphicon glyphicon-user" style="letter-spacing:5px;"></span> <p>About Me</p>
   </div>
 
@@ -53,8 +55,8 @@
     <img src="./img/my_picture" alt="myprofile"/>
   </div>
 
-  <div class="portfolio_title profile_title animated fadein">
-    <span class="glyphicon glyphicon-apple" style="letter-spacing:5px;"></span> <p>Introduction</p>
+  <div class="portfolio_title profile_title animated fadein" id="#introduction">
+    <span class="glyphicon glyphicon-apple" style="letter-spacing:5px;" id="introduction_section"></span> <p>Introduction</p>
   </div>
   <div class="introduction_text animated fadein">
     <p>
@@ -67,7 +69,7 @@
   </div>
 
   <div class="portfolio_title profile_title animated fadein">
-    <span class="glyphicon glyphicon-education" style="letter-spacing:5px;"></span> <p>Backgrounds</p>
+    <span class="glyphicon glyphicon-education" style="letter-spacing:5px;" id="backgrounds_section"></span> <p>Backgrounds</p>
   </div>
 
   <div class="introduction_text animated fadein">
@@ -84,7 +86,7 @@
 
   <!-- スキル紹介 -->
 <div class="skill_section">
-  <div class="portfolio_title skill_title">
+  <div class="portfolio_title skill_title" id="skills_section">
   <div class="portfolio_title profile_title animated fadein">
     <span class="glyphicon glyphicon-cog" style="letter-spacing:5px;"></span><p>Skills</p>
   </div>
@@ -147,7 +149,7 @@
   </div>
 </div>
 <!-- サービス紹介 -->
-<div class="service_section">
+<div class="service_section" id="service_section">
 <div class="portfolio_title skill_title">
   <span class="glyphicon glyphicon-globe" style="letter-spacing:5px;"></span><p>Service</p>
 </div>
@@ -155,50 +157,52 @@
 <div class="animated fadein">
   <div class="service_item">
     <div class="service_image">
-      <img src="./image/desktop.jpg" alt="coding" />
+      <img src="./img/coding.jpg" alt="coding" />
     </div>
     <div class="sub_title">
       <p>コーディング</p>
     </div>
-
     <div class="service_content">
       LPやコーポレートサイト、ブログなど、
-      目的に応じた適切なコーディングを行います(レスポンシブ対応可)。また、軽微なコードの修正などにも対応しています。<br><br>
+      クライアント様に応じたなコーディングを行います。レスポンシブ対応、コードの修正等も行います。<br><br>
       【料金目安】<br>
-      コード修正: ¥10,000~/1p<br>
-      LP制作: ¥20,000~/1p
+      コード修正(1p): ¥8000~<br>
+      LP制作(1p): ¥20,000~<br>
+      <br>使用技術<br>HTML,CSS,jQuery,JavaScript
     </div>
   </div>
 
   <div class="service_item">
     <div class="service_image">
-      <img src="./image/pencil.jpg" alt="web design" />
+      <img src="./img/web-design.jpg" alt="web design" />
     </div>
     <div class="sub_title">
       <p>Webデザイン</p>
     </div>
     <div class="service_content">
-      ヒアリングにより、ご要望に沿ったデザインを的確に把握し作成致します。
-      ユーザーインターフェースを重要視した設計を行い、ご期待を超える提案を提供します。<br><br>
+      ヒアリングにより、クライアント様のご要望にあったデザインのサイトを提供させていただきます。<br><br>
       【料金目安】<br>
-      LP制作: ¥30,000~/1p<br>
-      コーポレートサイト (10p以下): ¥80,000~
+      LP制作(1p): ¥25,000~/<br>
+      コーポレートサイト (10p以下): ¥70,000~
+      <br>
+      <br>使用技術<br>Adobe XD,figma
     </div>
   </div>
-
     <div class="service_item">
       <div class="service_image">
-        <img src="./image/wordpress2.jpg" alt="wordpress" />
+        <img src="./img/Wordpress2.jpg" alt="wordpress" />
       </div>
       <div class="sub_title">
         <p>Wordpress</p>
       </div>
       <div class="service_content">
-        コーポレートサイトや個人ブログ、およびウェブマガジンなどのWordPressサイトの構築や既存サイトのWordPress移行、コードの修正に対応しております。
+        コーポレートサイトや個人ブログなどのWordPressサイトの構築、既存サイトのコードの修正に対応しております。
         <br><br>
         【料金目安】<br>
         Wordpress移行: ¥100,000~<br>
         Wordpress制作: ¥200,000~
+        <br>
+      <br>使用技術<br>Wordpress,PHP,HTML,CSS
       </div>
     </div>
     <p style="font-size:18px;">※正式なお見積もりは、別途ご相談させていただければと思います。</p>
@@ -207,12 +211,40 @@
 </div>
 
 <!--Webサイト　ポートフォリオ-->
-<div class="portfolio_section">
+<div class="portfolio_section" id="my_works_section">
   <div class="portfolio_title works_title">
-    <span class="glyphicon glyphicon-list-alt" style="letter-spacing:5px;"></span><p>My Works</p>
+    <span class="glyphicon glyphicon-list-alt" style="letter-spacing:5px;" ></span><p>My Works</p>
   </div>
 
 <div class="animated fadein">
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="./img/Wordpress.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">自己紹介サイト</h5>
+        <p class="card-text">使用技術<br>
+          HTML,CSS,jQuery,JavaScript
+        </p>
+        <p class="card-text"><small class="text-muted">自身のスキルを紹介するサイトになります</small></p>
+      </div>
+    </div>
+    <div class="card" id="portfolio_display">
+      <img class="card-img-top" src="./img/Wordpress.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="./img/emailのコピー.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  <!-- </div>
     <a href="https://mizutaniyuji.github.io/my_portfolio" class="portfolio_link">
     <div class="portfolio">
     	<img src="./image/my_portfolio.png" alt="portfolio" />
@@ -256,14 +288,14 @@
         </p>
       </div>
     </div>
-    </a>
+    </a> -->
 
   </div>
 </div>
 
-<footer>
+
   <!--コンタクトフォーム-->
-  <div class="portfolio_title contact_title">
+  <div class="portfolio_title contact_title" id="contact_section">
     <span class="glyphicon glyphicon-envelope" style="letter-spacing:5px;"></span><p>Contact</p>
   </div>
   <div class="contact_text">ご依頼（ご相談）はメールよりお願い致します</div>
@@ -271,13 +303,13 @@
   <a href="mailto:gerund25495641@gmail.com" class="gmail"><img src="./img/email.jpg" alt=""></a>
   </div>
     <!--SNSアイコン-->
-    <div class="SNS_account">
+    <div class="portfolio_title contact_title" id="sns_section">
     <div class="portfolio_title skill_title">
-      <span class="glyphicon glyphicon-globe" style="letter-spacing:5px;"></span><p>SNS</p>
+      <span class="glyphicon glyphicon-globe"  style="letter-spacing:5px;"></span><p>SNS</p>
     </div>
     <div>
     <ul class="follow-me">
-      <div class="follow_text"><p>SNSはこちらとなります</p></div>
+      <div class="follow_text"><p>各種SNSはこちらとなります</p></div>
       <div class="SNS">
         <div class="card">
           <a href="https://twitter.com/daisukesasaki56" class="gmail"><img src="./img/twitter.jpg" class="card-img-top" alt="..."></a>
@@ -292,9 +324,11 @@
     </ul>
     </div>
     </div>
+
     <!--コピーライト-->
-    <div id="copyright">
-      Copyright &copy; 2020 Daisuke Sasaki's Protfolio All Rights Reserved.
+<footer>
+    <div id="copyright" class="copyright">
+      <p>Copyright &copy; 2020 Daisuke Sasaki's Protfolio All Rights Reserved.</p>
     </div>
 </footer>
 </div>
@@ -302,15 +336,17 @@
       <script src="bootstrap/js/bootstrap.min.js"></script>
       <script src="bootstrap/js/bootstrap.js"></script>
       <script src="vendor/jquery.waypoints.min.js"></script>
-      <script src="vendor/jquery.magnific-popup.min.js"></script>
-      <script src="vendor/mobile-detect.min.js"></script>
-
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script src="jquery.waypoints.min.js"></script>
       <link rel="stylesheet" href="animate.css">
       <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./js/main.js"></script>
+      <link rel="stylesheet" href="animate.css">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="jquery.textillate.js"></script>
       <script src="jquery.lettering.js"></script>
-      <script src="./js/main.js"></script>
+      <script>
+
+        </script>
 </body>
 </html>

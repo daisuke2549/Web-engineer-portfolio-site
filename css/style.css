@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 @import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
 html, body {
-  background-color: lightblue;
   color: white;
   font-family: 'PT Serif', serif;
   margin: 0px;
@@ -10,6 +9,11 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url(../img/cloud.jpg);
+}
+
+body {
+  background-image: url(../img/cloud.jpg);
 }
 
 /*JQuery用*/
@@ -108,7 +112,7 @@ html, body {
 .overlay.open {
   opacity: 0.9;
   visibility: visible;
-  height: 100%;
+  height: 80%;
 }
 
 .overlay.open li {
@@ -130,10 +134,10 @@ html, body {
 
 .overlay nav {
   position: relative;
-  height: 70%;
-  top: 50%;
+  height: 40%;
+  top: 30%;
   transform: translateY(-50%);
-  font-size: 50px;
+  font-size: 30px;
   font-family: "Vollkorn", serif;
   font-weight: 400;
   text-align: center;
@@ -195,6 +199,7 @@ html, body {
 .main_content {
   position: sticky;
   top: 0;
+  background-image: url(../img/cloud.jpg);
 }
 
 /*タイトル*/
@@ -304,8 +309,8 @@ html, body {
 
 .service_image img {
   width: 40%;
-  height: auto;
-  border-radius: 50%;
+  height: 120px;
+  border-radius: 10%;
 }
 
 /*ポートフォリオ*/
@@ -316,6 +321,18 @@ html, body {
   margin-top: 30px;
   color: white;
   font-family: 'Cinzel', serif;
+}
+
+.card-body {
+  background-color: lightgray;
+}
+
+.card-title {
+  font-size: 30px;
+}
+
+.card-text {
+  font-size: 22px;
 }
 
 .portfolio_title p {
@@ -604,10 +621,10 @@ html, body {
 /*フッター*/
 footer {
   color: black;
-  padding-bottom: 20px;
-  background-image: url("image/toppage9.jpg");
+  margin-bottom: 0px;
+  background-color: #008BBB;
   background-size: cover;
-  padding-top: 100px;
+  height: 100px;
 }
 
 .contact_text {
@@ -617,6 +634,12 @@ footer {
 
 .contact_title, .contact_title p {
   color: white;
+}
+
+.copyright p {
+  position: relative;
+  top: 35px;
+  font-size: 24px;
 }
 
 /*コンタクトフォーム*/
@@ -642,18 +665,19 @@ footer {
 
 .follow_text p {
   font-size: 20px;
+  color: black;
 }
 
 .SNS {
-  display: flex;
+  display: inline-block;
   position: relative;
-  left: 680px;
+  left: -15px;
 }
 
 .card {
   width: 100px;
-  margin: 30px;
   text-align: center;
+  margin: 20px;
 }
 
 .follow-me li a::before {
