@@ -9,11 +9,11 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(../img/cloud.jpg);
 }
 
 body {
   background-image: url(../img/cloud.jpg);
+  height: 1000px;
 }
 
 /*JQuery用*/
@@ -196,12 +196,6 @@ body {
   }
 }
 
-.main_content {
-  position: sticky;
-  top: 0;
-  background-image: url(../img/cloud.jpg);
-}
-
 /*タイトル*/
 .my_introduction {
   margin: 0 auto;
@@ -227,10 +221,6 @@ body {
   margin: 0 auto;
 }
 
-.main_content {
-  background-color: lightblue;
-}
-
 /* Profile Section */
 .profile_section {
   margin: 0 auto;
@@ -244,7 +234,7 @@ body {
   color: black;
   font-size: 18px;
   margin: 0 auto 40px auto;
-  padding: 20px;
+  padding: 50px;
   border-radius: 15px;
 }
 
@@ -304,7 +294,7 @@ body {
 .service_section {
   margin: 0 auto;
   padding: 30px 0 60px 0;
-  margin-top: 0px;
+  margin-top: 200px;
 }
 
 .service_image img {
@@ -319,8 +309,10 @@ body {
   font-size: 40px;
   margin-bottom: 15px;
   margin-top: 30px;
+  margin: auto;
   color: white;
   font-family: 'Cinzel', serif;
+  text-align: center;
 }
 
 .card-body {
@@ -390,7 +382,8 @@ body {
   padding: 30px 0 60px 0;
   height: 100px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 135px;
+  margin-bottom: 100px;
 }
 
 .skill-list {
@@ -489,10 +482,15 @@ body {
 .service_item {
   display: inline-block;
   width: 30%;
+  text-align: center;
+  padding-right: 10px;
+  margin-left: 30px;
+  position: relative;
+  left: 10px;
 }
 
 .service_image img {
-  width: 50%;
+  width: 60%;
 }
 
 .service_content {
@@ -502,6 +500,10 @@ body {
   margin: 0 auto 40px auto;
   padding: 30px 10px 30px 10px;
   border-radius: 15px;
+}
+
+.quote_comment {
+  text-align: center;
 }
 
 /* ポートフォリオセクション */
@@ -621,7 +623,7 @@ body {
 /*フッター*/
 footer {
   color: black;
-  margin-bottom: 0px;
+  margin-bottom: -60px;
   background-color: #008BBB;
   background-size: cover;
   height: 100px;
@@ -630,6 +632,11 @@ footer {
 .contact_text {
   font-size: 20px;
   margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact_title {
+  margin-top: 270px;
 }
 
 .contact_title, .contact_title p {
@@ -640,9 +647,14 @@ footer {
   position: relative;
   top: 35px;
   font-size: 24px;
+  text-align: center;
 }
 
 /*コンタクトフォーム*/
+.email_icon {
+  text-align: center;
+}
+
 .email_icon img {
   height: 100px;
   margin-top: 20px;
@@ -674,10 +686,23 @@ footer {
   left: -15px;
 }
 
+.sns_title {
+  margin-top: 100px;
+}
+
 .card {
   width: 100px;
   text-align: center;
   margin: 20px;
+}
+
+.card-img-top {
+  transition: all 1s linear 0s;
+  cursor: pointer;
+}
+
+.card-img-top:hover {
+  transform: rotateY(360deg);
 }
 
 .follow-me li a::before {
@@ -754,11 +779,9 @@ footer {
 /*レスポンシブ対応*/
 @media screen and (min-width: 500px) {
   .skill_section {
-    background-image: url("image/toppage3.jpg");
     background-size: cover;
   }
   .profile_section {
-    background-image: url("image/toppage15_2.jpg");
     background-size: cover;
   }
   .portfolio {
@@ -770,7 +793,6 @@ footer {
     font-size: 150%;
   }
   .portfolio_section {
-    background-image: url("image/toppage13.jpg");
     background-size: cover;
   }
   .skill {
@@ -785,18 +807,15 @@ footer {
     width: 30%;
   }
   .service_section {
-    background-image: url("image/toppage14_2.jpg");
     background-size: cover;
   }
 }
 
 @media screen and (min-width: 768px) {
   .profile_section {
-    background-image: url("image/toppage15.jpg");
     background-size: cover;
   }
   .skill_section {
-    background-image: url("image/toppage3.jpg");
     background-size: cover;
   }
   .portfolio {
@@ -808,7 +827,6 @@ footer {
     font-size: 120%;
   }
   .portfolio_section {
-    background-image: url("image/toppage13.jpg");
     background-size: cover;
   }
   .skill {
@@ -817,24 +835,22 @@ footer {
   }
   .service_item {
     display: inline-block;
-    width: 30%;
+    margin: auto;
   }
   .service_image img {
     width: 50%;
+    margin: auto;
   }
   .service_section {
-    background-image: url("image/toppage14.jpg");
     background-size: cover;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .profile_section {
-    background-image: url("image/toppage15.jpg");
     background-size: cover;
   }
   .skill_section {
-    background-image: url("image/toppage3.jpg");
     background-size: cover;
     height: 300px;
   }
@@ -847,7 +863,6 @@ footer {
     font-size: 130%;
   }
   .portfolio_section {
-    background-image: url("image/toppage13.jpg");
     background-size: cover;
   }
   .skill {
@@ -862,7 +877,6 @@ footer {
     width: 30%;
   }
   .service_section {
-    background-image: url("image/toppage14.jpg");
     background-size: cover;
   }
 }
