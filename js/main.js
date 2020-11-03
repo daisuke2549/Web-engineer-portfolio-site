@@ -72,4 +72,11 @@ $('#toggle').click(function() {
    $('.worker_type').textillate();
  })
 
- 
+
+ $(function() {
+     $('.copyright p').textFx({
+     　　　　type: 'rotate',
+     　　　　iChar: 300,
+     　　　　iAnim: '100'
+ 　　　　});
+ });

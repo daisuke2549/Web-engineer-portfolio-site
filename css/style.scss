@@ -642,14 +642,17 @@ footer {
 }
 
 .follow_text p{
-    font-size: 20px;
+    font-size: 24px;
     color: black;
+    margin-top:20px;
+    text-align: center;
 }
 
 .SNS{
-    display: inline-block; 
+    display: flex;
+    margin:auto;
+    left:705px;  
     position: relative;
-    left:-15px;  
 }
 
 .sns_title{
@@ -660,6 +663,7 @@ footer {
     width:100px;
     text-align: center;
     margin: 20px;
+    margin-top:20px;
 }
 
 
@@ -739,6 +743,7 @@ footer {
   .service_section {
     background-size: cover;
   }
+
 }
 @media screen and (min-width:768px) {
   .profile_section {
@@ -773,6 +778,12 @@ footer {
   .service_section {
     background-size: cover;
   }
+  .SNS{
+    display: flex;
+    margin:auto;
+    left:245px;  
+    position: relative;
+}
 }
 @media screen and (min-width:1024px) {
   .profile_section {
@@ -807,6 +818,11 @@ footer {
   .service_section {
     background-size: cover;
   }
-
+  .SNS{
+    display: flex;
+    margin:auto;
+    left:705px;  
+    position: relative;
+}
 }
 
