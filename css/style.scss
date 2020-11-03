@@ -314,7 +314,7 @@ img{
 .portfolio_title p{
 	display: inline-block;
 	position: relative;
-	color: white;
+	color: black;
  	text-decoration: none;
 }
 .portfolio_title p:before{
@@ -468,7 +468,7 @@ margin-bottom:15px;
   padding-right:10px;
   margin-left:30px;
   position: relative;
-  left:10px;
+  left:70px;
 }
 
 
@@ -603,7 +603,8 @@ footer {
 }
 
 .contact_title, .contact_title p{
-  color:white;
+  color:black;
+  margin-top:40px;
 }
 
 .copyright p{
@@ -611,6 +612,8 @@ footer {
   top:35px;
   font-size: 24px;
   text-align: center;
+  color:white;
+  font-weight: italic;
 }
 
 /*コンタクトフォーム*/
@@ -658,13 +661,7 @@ footer {
     text-align: center;
     margin: 20px;
 }
-.card-img-top {
-  transition: all 1s linear 0s;
-  cursor: pointer;
-}
-.card-img-top:hover {
-    transform: rotateY(360deg);
-}
+
 
 
 .follow-me li a::before {
