@@ -374,7 +374,7 @@ body {
 .sub_title p {
   display: inline-block;
   position: relative;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -504,7 +504,7 @@ body {
   border-radius: 15px;
 }
 
-.quote_comment {
+.quote_comment p {
   text-align: center;
 }
 
@@ -655,6 +655,10 @@ footer {
   font-weight: italic;
 }
 
+.quote_comment p {
+  text-align: center;
+}
+
 /*コンタクトフォーム*/
 .email_icon {
   text-align: center;
@@ -690,7 +694,7 @@ footer {
 .SNS {
   display: flex;
   margin: auto;
-  left: 705px;
+  left: 505px;
   position: relative;
 }
 
@@ -835,6 +839,10 @@ footer {
   .card-text {
     font-size: 20px;
   }
+  .introduction_text p {
+    font-size: 14px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -876,6 +884,10 @@ footer {
     left: 245px;
     position: relative;
   }
+  .introduction_text p {
+    font-size: 16px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -914,7 +926,7 @@ footer {
   .SNS {
     display: flex;
     margin: auto;
-    left: 705px;
+    left: 470px;
     position: relative;
   }
 }

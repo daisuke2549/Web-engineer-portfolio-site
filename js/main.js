@@ -75,8 +75,8 @@ $('#toggle').click(function() {
 
  $(function() {
      $('.copyright p').textFx({
-     　　　　type: 'rotate',
-     　　　　iChar: 300,
-     　　　　iAnim: '100'
- 　　　　});
+     type: 'rotate',
+     iChar: 300,
+     iAnim: '100'
+ });
  });
