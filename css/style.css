@@ -690,13 +690,26 @@ footer {
   margin-top: 20px;
   text-align: center;
 }
-
-.SNS {
-  display: flex;
-  margin: auto;
-  left: 505px;
-  position: relative;
+.SNS{
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
+.flex p img{
+  width:100px;
+  height:100px;
+  display: inline-block;
+  text-align: center;
+  margin:10px;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
 
 .sns_title {
   margin-top: 100px;
@@ -713,18 +726,7 @@ footer {
   height: 100%;
 }
 
-.SNS1 a {
-  margin: auto;
-}
 
-.SNS1 a img {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-  padding: auto;
-  left: 55px;
-  position: relative;
-}
 
 .follow-me li a::before {
   background-color: #eee;
