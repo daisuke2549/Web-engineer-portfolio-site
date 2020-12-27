@@ -80,3 +80,13 @@ $('#toggle').click(function() {
      iAnim: '100'
  });
  });
+
+
+$(window).scroll(function () {
+  var now = $(window).scrollTop();
+  if (now > 500) {
+    $('.page-top').fadeIn("slow");
+  } else {
+    $('.page-top').fadeOut('slow');
+  }
+});

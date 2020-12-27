@@ -45,6 +45,33 @@ body {
   font-weight: 700;
 }
 
+
+.page-top{
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom:10px;
+    z-index: 2;
+}
+.page-top a{
+    display: block;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #000000;
+    border-radius: 50%;
+    line-height: 50px;
+    z-index: 2;
+}
+.page-top a i{
+    font-size: 20px;
+    color:#fff;
+    line-height: 50px;
+    z-index: 2;
+}
+
+
 /*メニューバー*/
 .button_container {
   position: fixed;
@@ -319,6 +346,7 @@ body {
   background-color: lightgray;
   text-align: center;
   height: 300px;
+  z-index: 1;
 }
 
 .card-title {
