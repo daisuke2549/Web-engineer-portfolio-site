@@ -532,9 +532,6 @@ body {
   border-radius: 15px;
 }
 
-.quote_comment p {
-  text-align: center;
-}
 
 /* ポートフォリオセクション */
 /*ポートフォリオ配置*/
@@ -683,9 +680,6 @@ footer {
   font-weight: italic;
 }
 
-.quote_comment p {
-  text-align: center;
-}
 
 /*コンタクトフォーム*/
 .email_icon {
