@@ -717,13 +717,18 @@ footer {
   justify-content: space-evenly;
 }
 
-.flex p img{
+.flex p a{
   width:100px;
   height:100px;
   display: inline-block;
   text-align: center;
   margin:10px;
 }
+.flex p  a p1{
+  width:200px;
+  height:200px;
+}
+
 
 .flex{
   display: flex;
